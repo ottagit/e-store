@@ -3,11 +3,21 @@
 one:
   title: MyString
   description: MyText
-  image_url: MyString
+  image_url: win.jpeg
   price: 9.99
 
 two:
   title: MyString
   description: MyText
-  image_url: MyString
+  image_url: take.jpeg
   price: 9.99
+
+week: 
+  title: The 4-Hor Work Week
+  description:
+    A self-help book by Timoty Feriss. Join
+    the new rich ecosystem. Blablabla. Tap tap.
+    A must read for you. Check it out!
+  image_url: week.jpeg
+  price: 16.39
+
