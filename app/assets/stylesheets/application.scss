@@ -28,6 +28,7 @@ header.main {
   margin: 0;
   img {
     height: 60px;
+    margin: auto;
   }
   h1 {
     display: none;
@@ -86,3 +87,13 @@ main {
 }
 }
 
+.notce, #notice {
+  background: #ffb;
+  border-radius: 0.5em;
+  border: solid 0.177em #882;
+  color: #882;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 1em 1.414em;
+  text-align: center;
+}
