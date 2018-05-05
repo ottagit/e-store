@@ -23,7 +23,7 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
     follow_redirect!
 
     assert_select 'h2', 'Your Cart Collection'
-    assert_select 'li', 'The 4-Hour Work Week'
+    assert_select 'li', "1 \u00D7 The 4-Hour Work Week"
 
   end
 
