@@ -17,8 +17,9 @@
   <div class="actions">
     <%= button_to "Empty cart", cart, method: :delete, class: "empty",
       data: { confirm: 'Are you sure?' } %>
-
-    <%= button_to "Checkout", new_order_path, method: :get, class: "check checkout" %>
+    <%= hidden_div_if(@hide_checkout_button, id: 'cart') do %>
+      <%= button_to "Checkout", new_order_path, method: :get, class: "check checkout" %>
+    <% end %>
   </div>
 
 </article>
