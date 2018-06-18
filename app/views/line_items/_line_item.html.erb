@@ -5,5 +5,9 @@
 <% end %>
   <td class="quantity"><%= line_item.quantity %></td>
   <td><%= line_item.product.title %></td>
-  <td class="price"><%= number_to_currency(line_item.total_price) %></td>
+  <td class="price"><%= number_to_currency(line_item.total_price) %>
+    <% unless controller.controller_name == "orders" %>
+      <span><%= link_to raw('<i class="fa fa-sort-down"></i>'), line_item, remote: true, method: :delete %></span>
+    <% end %>
+  </td>
 </tr>
