@@ -6,4 +6,8 @@ class LineItem < ApplicationRecord
   def total_price
     product.price * quantity
   end
+
+  def decrement_or_destroy!
+    quantity > 1 ? decrement!(:quantity) : destroy!
+  end
 end
