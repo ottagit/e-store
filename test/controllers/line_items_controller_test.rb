@@ -58,4 +58,10 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to store_index_url
   end
+
+  test "should destroy line_item with ajax" do
+    assert_difference('LineItem.count', -1) do
+      delete line_item_url(@line_item), xhr: true
+    end
+  end
 end
