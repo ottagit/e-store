@@ -1,0 +1,7 @@
+Dear <%= @order.name %>,
+
+Thank you for your recent order. This note summarizes the contents.
+
+<%= render @order.line_items %>
+
+We'll send you separate notifications as items ship.
