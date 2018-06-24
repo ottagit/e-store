@@ -30,6 +30,20 @@ config.webpacker.check_yarn_integrity = true
     config.cache_store = :null_store
   end
 
+  Depot::Application.configure do
+    config.action_mailer.delivery_method = :smtp
+
+    config.action_mailer.smtp_settings = {
+      address: "smtp.gmail.com",
+      port: 587,
+      domain: "localhost",
+      authentication: "plain",
+      user_name: ENV["GMAIL_USERNAME"],
+      password: ENV["GMAIL_PASSWORD"],
+      enable_strttls_auto: true
+    }
+  end
+
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
