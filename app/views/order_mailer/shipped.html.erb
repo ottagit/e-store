@@ -1,5 +1,12 @@
-<h1>Order#shipped</h1>
+<h3>Favorite Order Shipped</h3>
 
 <p>
-  <%= @greeting %>, find me in app/views/order_mailer/shipped.html.erb
+  Hello <%= @order.name %>,
+  
+  This is just to let you know that we've shipped your recent order:
 </p>
+
+<table>
+  <tr><th colspan="2">Quantity</th><th>Description</th></tr>
+  <%= render @order.line_items %>
+</table>
