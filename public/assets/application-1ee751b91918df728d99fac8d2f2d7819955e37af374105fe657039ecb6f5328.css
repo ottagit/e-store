@@ -1,0 +1,507 @@
+/* line 6, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts table {
+  border-collapse: collapse;
+}
+/* line 9, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts td {
+  padding: 0.5em;
+}
+/* line 12, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts td.quantity {
+  white-space: nowrap;
+}
+/* line 15, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts td.quantity::after {
+  content: " x";
+}
+/* line 18, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts td.price {
+  font-weight: bold;
+  text-align: right;
+}
+/* line 23, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts tfoot th, .carts tfoot td.price {
+  font-weight: bold;
+  padding-top: 1em;
+}
+/* line 27, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts tfoot th {
+  text-align: right;
+}
+/* line 30, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts tfoot td.price {
+  border-top: solid thin;
+}
+/* line 34, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts input[type="submit"] {
+  background-color: #881;
+  border-radius: 0.354em;
+  border: solid thin #441;
+  color: white;
+  font-size: 1em;
+  padding: 0.354em 1em;
+  float: right;
+  margin: auto 5px;
+}
+/* line 44, /home/otta/workspace/depot/app/assets/stylesheets/carts.scss */
+.carts input[type="submit"]:hover {
+  background-color: #992;
+  cursor: pointer;
+}
+@keyframes line-item-highlight {
+  0% {
+    background: #8f8;
+  }
+  100% {
+    background: none;
+  }
+}
+/* line 14, /home/otta/workspace/depot/app/assets/stylesheets/line_items.scss */
+.line-item-highlight {
+  animation: line-item-highlight 1s;
+}
+
+/* line 18, /home/otta/workspace/depot/app/assets/stylesheets/line_items.scss */
+.fa {
+  font-size: 1em;
+  color: #992;
+  padding-left: 1em;
+}
+/* line 5, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products {
+  margin: 0;
+  padding: 0.5em;
+}
+/* line 8, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products a {
+  padding: 0.354em 0.5em;
+  border-radius: 0.354em;
+}
+/* line 12, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products table {
+  border-collapse: collapse;
+}
+/* line 15, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products td {
+  padding: 0.5em;
+  margin: 0;
+}
+/* line 19, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products tr.list_line_odd {
+  background-color: #effeef;
+}
+/* line 22, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products td.image {
+  display: none;
+}
+@media (min-width: 30em) {
+  /* line 22, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+  .products td.image {
+    display: block;
+  }
+  /* line 32, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+  .products td.image img {
+    height: 11.3em;
+  }
+}
+/* line 39, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products td.description h1 {
+  font-size: 1.4em;
+}
+/* line 45, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products td.actions ul {
+  padding: 0;
+  list-style: none;
+}
+/* line 48, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products td.actions ul li {
+  padding: 0.5em 0.5em;
+}
+/* line 55, /home/otta/workspace/depot/app/assets/stylesheets/products.scss */
+.products tfoot td {
+  padding: 0.5em 0;
+}
+/* line 1, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 10, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* line 16, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 22, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+a {
+  color: #000;
+}
+/* line 25, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+a:visited {
+  color: #666;
+}
+/* line 29, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+a:hover {
+  color: #000;
+  background-color: none;
+}
+
+/* line 35, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 39, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding: 0 5px 7px;
+}
+
+/* line 44, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 49, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+#notice {
+  color: green;
+}
+
+/* line 53, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 59, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 66, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 76, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 82, /home/otta/workspace/depot/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/* line 5, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store {
+  max-width: 80em;
+}
+/* line 7, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog {
+  border-top: solid 0.250em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 12, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li {
+  padding: 1em;
+  margin: 0;
+  border-bottom: solid thin #ddd;
+}
+/* line 19, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li::after {
+  clear: both;
+  content: " ";
+  display: block;
+}
+/* line 24, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li img {
+  float: left;
+  padding: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0.176em 0.176em 0.354em 0px rgba(0, 0, 0, 0.75);
+}
+/* line 31, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li .price {
+  font-size: 1.414em;
+}
+/* line 34, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li form, .store ul.catalog li div {
+  display: inline;
+}
+/* line 37, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li input[type="submit"] {
+  background-color: #282;
+  border-radius: 0.354em;
+  border: solid thin #141;
+  color: white;
+  font-size: 1em;
+  padding: 0.354em 1em;
+}
+/* line 45, /home/otta/workspace/depot/app/assets/stylesheets/store.scss */
+.store ul.catalog li input[type="submit"]:hover {
+  background-color: #141;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 23, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+header.main {
+  text-align: center;
+  background: #282;
+  margin: 0;
+}
+@media (min-width: 30em) {
+  /* line 23, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+  header.main {
+    text-align: left;
+  }
+}
+/* line 30, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+header.main img {
+  height: 60px;
+  margin: auto;
+}
+/* line 34, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+header.main h1 {
+  display: none;
+}
+
+/* line 39, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+}
+@media (min-width: 30em) {
+  /* line 39, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+  .content {
+    flex-direction: row;
+    -webkit-box-orient: horizontal;
+  }
+}
+/* line 54, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content nav {
+  padding-bottom: 1em;
+  background: #141;
+  text-align: center;
+}
+@media (min-width: 30em) {
+  /* line 54, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+  .content nav {
+    text-align: left;
+    padding: 1em;
+  }
+}
+/* line 63, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (min-width: 30em) {
+  /* line 63, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+  .content nav ul {
+    padding-right: 1em;
+  }
+}
+/* line 70, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content nav ul li {
+  margin: 0;
+  padding: 0.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.354em;
+}
+/* line 75, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content nav ul li a {
+  color: #bfb;
+  text-decoration: none;
+}
+/* line 79, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content nav ul li a:hover {
+  background: none;
+  color: white;
+}
+/* line 86, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.content main {
+  padding: 0.5em;
+}
+
+/* line 91, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.notice, #notice {
+  background: #ffb;
+  border-radius: 0.5em;
+  border: solid 0.177em #882;
+  color: #882;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding: 1em 1.414em;
+  text-align: center;
+}
+
+/* line 103, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+#cart article {
+  background: white;
+  border-radius: 0.5em;
+  margin: 1em;
+  padding: 1.414em;
+}
+/* line 104, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+#cart article h2 {
+  margin-top: 0;
+}
+/* line 111, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+#cart article .check {
+  float: right;
+  background-color: #9d9;
+  color: black;
+  font-weight: bold;
+}
+/* line 117, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+#cart article .empty {
+  float: left;
+}
+@media (min-width: 30em) {
+  /* line 103, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+  #cart article {
+    margin: 0;
+  }
+}
+
+/* line 126, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form {
+  padding: 0 1em;
+}
+/* line 128, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form h1 {
+  font-size: 1.99em;
+  line-height: 1.41em;
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+/* line 134, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form .field, .depot_form .actions {
+  margin-bottom: 0.5em;
+  padding: 0;
+}
+/* line 138, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form .actions {
+  text-align: right;
+  padding: 1em 0;
+}
+/* line 142, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form input, .depot_form textarea, .depot_form select, .depot_form option {
+  border: solid thin #888;
+  box-sizing: border-box;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 100%;
+}
+/* line 149, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form label {
+  padding: 0.5em 0;
+}
+/* line 152, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form input[type="submit"] {
+  background-color: #bfb;
+  border-radius: 0.354em;
+  border: solid thin #888;
+  color: black;
+  font-size: 1.41em;
+  font-weight: bold;
+  padding: 0.354em 1em;
+}
+/* line 161, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form input[type="submit"]:hover {
+  background-color: #9d9;
+}
+/* line 165, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation {
+  background-color: white;
+  border-radius: 1em;
+  border: solid thin red;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  width: 100%;
+}
+/* line 172, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation h2 {
+  background: none;
+  color: red;
+  font-size: 1.41em;
+  line-height: 1.41em;
+  padding: 1em;
+}
+/* line 179, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation ul {
+  margin-top: 0;
+}
+/* line 181, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form #error_explanation ul li {
+  color: red;
+  font-size: 1em;
+}
+/* line 187, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors {
+  background: none;
+  color: red;
+  width: 100%;
+}
+/* line 191, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors label {
+  font-weight: bold;
+}
+/* line 194, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors label::before {
+  contnet: "! ";
+}
+/* line 197, /home/otta/workspace/depot/app/assets/stylesheets/application.scss */
+.depot_form .field_with_errors input, .depot_form .field_with_errors textarea {
+  background: pink;
+}
