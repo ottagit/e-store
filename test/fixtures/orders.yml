@@ -7,7 +7,13 @@ one:
   pay_type: Check
 
 two:
-  name: MyString
+  name: Batoto Bitange
   address: MyText
-  email: MyString
-  pay_type: 1
+  email: email_2@example.com
+  pay_type: Credit card
+
+three:
+  name: John Doe
+  address: MyText
+  email: email_3@example.com
+  pay_type: Purchase order
