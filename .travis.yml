@@ -1,3 +1,5 @@
+#confirm no travis sync
+
 language: ruby
 rvm:
   - 2.4
