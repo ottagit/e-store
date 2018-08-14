@@ -198,3 +198,25 @@ main {
     }
   }
 }
+
+/* Logged in nav */
+nav.logged_in_nav {
+  border-top: solid thin #bfb;
+  padding: 0.354em 0;
+  margin-top: 0.354em;
+  input[type="submit"] {
+    /* Make logout button look like a link, so it matches nav style */
+    background: none;
+    border: none;
+    color: #bfb;
+    font-size: 1em;
+    letter-spacing: 0.354em;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+    color: white;
+  }
+}

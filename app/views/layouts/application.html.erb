@@ -27,6 +27,15 @@
           <li><a href="/questions">Questions</a></li>
           <li><a href="/news">News</a></li>
           <li><a href="/contact">Contact</a></li>
+
+          <% if session[:user_id] %>
+            <nav class="logged_in_nav">
+              <li><%= link_to "Orders", orders_url %></li>
+              <li><%= link_to "Products", products_url %></li>
+              <li><%= link_to "Users", users_url %></li>
+              <li><%= button_to "Logout", logout_path, method: :delete %></li>
+            </nav>
+          <% end %>
         </ul>
       </nav>
       <main class="<%= controller.controller_name %>">
