@@ -4,9 +4,16 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @product = products(:one)
     @title = "Product Title #{rand(1000)}"
+    @admin = users(:one)
   end
 
-  test "should get index" do
+  test "should get index only if logged in" do
+    get products_url
+    assert_response :success
+    logout
+    get products_url
+    assert_redirected_to login_url
+    login_as @admin
     get products_url
     assert_response :success
   end
