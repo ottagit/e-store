@@ -16,6 +16,6 @@ Product.create!(title: 'Take My Money',
                   experienced developer needing to expand your options. Plus, you’ll find
                   out which cross-platform solution makes the most sense for your needs.
                 </p>},
-                image_url: 'eating.jpg',
+                image_url: 'take.jpeg',
                 price: 12.49)
 
