@@ -79,7 +79,7 @@ config.webpacker.check_yarn_integrity = false
     authentication:   "plain",
     user_name:        ENV["GMAIL_USERNAME"],
     password:         ENV["GMAIL_PASSWORD"],
-    domain:           host,
+    domain:           "virago.herokuapp.com",
     enable_starttls:  true
   }
 
